@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="10dp"
+    android:padding="10dp">
+
+    <ImageView
+        android:id="@+id/ivItemPhoto"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/ic_dummy_photo" />
+
+    <TextView
+        android:id="@+id/tvItemTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/ivItemPhoto"
+        android:text="@string/title"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btnItemEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/ivItemPhoto"
+        android:layout_toRightOf="@id/ivItemPhoto"
+        android:text="@string/edit" />
+
+    <Button
+        android:id="@+id/btnItemDelete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/ivItemPhoto"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/btnItemEdit"
+        android:text="@string/delete" />
+
+</RelativeLayout>
